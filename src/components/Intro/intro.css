@@ -1,4 +1,5 @@
 #intro {
+    background: rgb(7, 15, 43);
     height: calc(100vh - 4rem);
     width: 100vw;
     max-width: 75rem;
