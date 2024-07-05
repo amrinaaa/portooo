@@ -13,9 +13,3 @@ body {
     overflow: hidden;
     overflow-y: scroll;
 }
-
-@media screen and (max-width:720px) {
-    .skillBarText>p {
-        font-size: 2vw;
-    }
-}

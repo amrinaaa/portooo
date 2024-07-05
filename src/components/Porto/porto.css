@@ -1,0 +1,95 @@
+#porto {
+    margin: 0 auto;
+    min-height: calc(100vh - 6rem);
+    width: 100vw;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.portosTitle{
+    margin: 1rem;
+    font-size: 3rem;
+}
+
+.portosDesc {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.portosImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    max-width: 65rem;
+}
+
+.portoImg {
+    object-fit: cover;
+    height: 15rem;
+    width: calc(30% - 1rem);
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 840px) {
+    .portosTitle {
+        font-size: 2.5rem;
+    }
+
+    .portosDesc {
+        font-size: 0.9rem;
+    }
+
+    .portoImg {
+        height: 13rem;
+    }
+}
+@media screen and (max-width: 640px) {
+    .portosTitle {
+        font-size: 2rem;
+    }
+
+    .portosDesc {
+        font-size: 0.8rem;
+    }
+    .portoImg {
+        width: calc(40%);
+        height: 13rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .portosTitle {
+        font-size: 1.8rem;
+    }
+
+    .portosDesc {
+        font-size: 0.8rem;
+    }
+    .portoImg {
+        width: calc(40%);
+        height: 10rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .portosTitle {
+        font-size: 1.6rem;
+    }
+
+    .portosDesc {
+        font-size: 0.6rem;
+    }
+    .portoImg {
+        width: calc(50%);
+        height: 10rem;
+    }
+}
