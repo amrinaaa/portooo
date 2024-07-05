@@ -16,7 +16,7 @@
     object-fit: cover;
     height: 60vh;
     width: auto;
-    margin-right: 2rem;
+    margin-right: 0;
 }
 
 .introContent {
