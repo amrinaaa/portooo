@@ -14,7 +14,7 @@
 .skillTitle {
     font-size: 3rem;
     font-weight: 600;
-    padding-top: 3rem;
+    padding-top: 0.1rem;
     margin-bottom: 1.5rem;
 }
 
@@ -51,4 +51,84 @@
 .skillBarText>p{
     font-size: 0.8rem;
     font-weight: 300;
+}
+
+@media screen and (max-width:840px) {
+    .skillBarText>p {
+        font-size: 1.5vw;
+    }
+    .skillBarImg {
+        object-fit: cover;
+        height: 4rem;
+        width: 4rem;
+    }
+    .skillTitle {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .skillBarText>p {
+        font-size: 1.5vw;
+    }
+    .skillBarImg {
+        height: 3rem;
+        width: 3rem;
+    }
+    .skillTitle {
+        font-size: 2rem;
+    }
+    .skillBars {
+        font-size: 0.9rem;
+    }
+    .skillDesc {
+        font-size: 0.9rem;
+    }
+    .skillBar {
+        height: 7rem;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .skillBarText>p {
+        font-size: 1.5vw;
+    }
+    .skillBarImg {
+        height: 2.2rem;
+        width: 2.2rem;
+    }
+    .skillTitle {
+        font-size: 1.8rem;
+    }
+    .skillBars {
+        font-size: 0.8rem;
+    }
+    .skillDesc {
+        font-size: 0.8rem;
+    }
+    .skillBar {
+        height: 6rem;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .skillBarText>p {
+        font-size: 1.5vw;
+    }
+    .skillBarImg {
+        height: 1.9rem;
+        width: 1.9rem;
+    }
+    .skillTitle {
+        font-size: 1.7rem;
+    }
+    .skillBars {
+        font-size: 0.6rem;
+    }
+    .skillDesc {
+        font-size: 0.7rem;
+    }
+    .skillBar {
+        height: 6rem;
+    }
 }

@@ -61,9 +61,9 @@
 
 @media screen and (max-width: 840px) {
     .bg {
-        height: 30vh;
+        height: 50vh;
         width: auto;
-        margin-right: 1rem;
+
     }
 
     .introContent {
@@ -77,6 +77,69 @@
     }
 
     .introPara {
-        font-size: 3.5vw;
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .bg {
+        height: 40vh;
+        width: auto;
+    }
+
+    .introContent {
+        width: calc(100vw - 4rem);
+        padding: 1rem;
+        font-size: 4vw;
+    }
+
+    .hello {
+        font-size: 4.5vw;
+    }
+
+    .introPara {
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .bg {
+        height: 30vh;
+        width: auto;
+    }
+
+    .introContent {
+        width: calc(100vw - 4rem);
+        padding: 1rem;
+        font-size: 4vw;
+    }
+
+    .hello {
+        font-size: 4.5vw;
+    }
+
+    .introPara {
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .bg {
+        height: 30vh;
+        width: auto;
+    }
+
+    .introContent {
+        width: calc(100vw - 4rem);
+        padding: 1rem;
+        font-size: 4vw;
+    }
+
+    .hello {
+        font-size: 4.5vw;
+    }
+
+    .introPara {
+        font-size: 2.5vw;
     }
 }

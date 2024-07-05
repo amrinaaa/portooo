@@ -49,3 +49,61 @@
     width: 1rem;
     margin: 0rem;
 }
+
+@media screen and (max-width: 640px) {
+    .desktopMenuListItem{
+        margin: 0.2rem;
+        font-size: 0.8rem;
+    }
+
+    .logo {
+        height: 2.5rem;
+        width: 6rem;
+    }
+
+    .desktopMenuBtn{
+        padding: 0 2rem;
+        border-radius: 2rem;
+        height: 2rem;
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .desktopMenuListItem{
+        margin: 0.2rem;
+        font-size: 0.5rem;
+    }
+
+    .logo {
+        height: 2.5rem;
+        width: 6rem;
+    }
+
+    .desktopMenuBtn{
+        padding: 0 1rem;
+        border-radius: 2rem;
+        height: 2rem;
+        font-size: 0.5rem;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .desktopMenuListItem{
+        margin: 0.2rem;
+        font-size: 0.6rem;
+    }
+
+    .logo {
+        height: 2.5rem;
+        width: 6rem;
+    }
+
+    .desktopMenuBtn{
+        padding: 0 1.5rem;
+        border-radius: 2rem;
+        height: 2rem;
+        font-size: 0.6rem;
+    }
+}
