@@ -1,0 +1,39 @@
+#contactPage {
+    margin: 0 auto;
+    min-height: calc(100vh - 6rem);
+    width: 100vw;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.contactPage {
+    margin: 1rem;
+    font-size: 3rem;
+}
+
+.experienceDesc {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.experiencesImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    max-width: 65rem;
+}
+
+.experienceImg {
+    object-fit: cover;
+    height: 10rem;
+    width: calc(40%);
+    margin: 0.5rem;
+    cursor: pointer;
+}

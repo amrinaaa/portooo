@@ -8,7 +8,7 @@ const Skills = () => {
     return (
         <section id ="skills">
             <span className="skillTitle">What I do</span>
-            <div className="skillDesc">I am a skilled and passionate Writing and Financial Management</div>
+            <div className="skillDesc">I am a skilled and passionate Writing and Financial Management.</div>
             <div className="skillBars">
                 <div className="skillBar">
                     <img src={Menulis} alt="Menulis" className="skillBarImg"/>
@@ -21,7 +21,7 @@ const Skills = () => {
                     <img src={Manajemen} alt="Manajemen" className="skillBarImg"/>
                     <div className="skillBarText">
                         <h2>Financial Management</h2>
-                        <p>Optimizing budgets and financial decisions for stability and growth</p>
+                        <p>Optimizing budgets and financial decisions for stability and growth.</p>
                     </div>
                 </div>
                 <div className="skillBar">

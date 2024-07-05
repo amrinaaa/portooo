@@ -2,7 +2,8 @@ import Navbar from "./components/Navbar/navbar";
 import Intro from "./components/Intro/intro";
 import Skills from "./components/Skills/skills";
 import Porto from "./components/Porto/porto";
-import Footer from "./components/Footer/footer"
+import Footer from "./components/Footer/footer";
+import Contact from "./components/Contact/contact";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Skills />
       <Porto />
       <Footer />
+      <Contact />
     </div>
   );
 }
