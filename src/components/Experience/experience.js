@@ -20,6 +20,8 @@ const Experience = () => {
         console.log('Sending email...');
         emailjs.sendForm('service_ru43hhk', 'template_zgi3l4y', form.current, '0ilaJGuRSjQ5H4Qs1')
             .then((result) => {
+                console.log(result.text);
+                e.target.reset();
                 console.log('Email sent successfully:', result.text);
                 alert("Message Sent Successfully!");
             }, (error) => {
