@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './experience.css';
 import Pelatihan from '../../assets/pelatihan.png';
 import Volunteer from '../../assets/volunteer.png';
@@ -9,14 +9,31 @@ import Magang from '../../assets/magang.png';
 import InstagramIcon from '../../assets/instagram.png';
 import TelegramIcon from '../../assets/tele.png';
 import WhatsappIcon from '../../assets/whatsapp.png';
+import emailjs from '@emailjs/browser';
 
 const Experience = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        console.log('Sending email...');
+        emailjs.sendForm('service_ru43hhk', 'template_zgi3l4y', form.current, '0ilaJGuRSjQ5H4Qs1')
+            .then((result) => {
+                console.log('Email sent successfully:', result.text);
+                alert("Message Sent Successfully!");
+            }, (error) => {
+                console.log('Failed to send email:', error.text);
+                alert("Failed to Send Message, please try again.");
+            });
+    };
+
     return (
         <section id="experiencePage">
             <div id="experience">
                 <h1 className="experiencePageTitle">My Experience</h1>
                 <p className="experienceDesc">
-                I gained practical industry skills through an internship during vocational high school (SMK) and, as a dedicated university student, I actively participate in scientific paper competitions, training programs, organizing committees, community service projects, and am building a career as an online store affiliate, all of which have honed my collaboration, leadership, and problem-solving abilities.
+                    I gained practical industry skills through an internship during vocational high school (SMK) and, as a dedicated university student, I actively participate in scientific paper competitions, training programs, organizing committees, community service projects, and am building a career as an online store affiliate, all of which have honed my collaboration, leadership, and problem-solving abilities.
                 </p>
                 <div className="experiencesImg">
                     <img src={Pelatihan} alt=" " className="experienceImg" />
@@ -28,12 +45,12 @@ const Experience = () => {
                 </div>
             </div>
             <div id="contact">
-                <h1 className="experiencePageTitle">Contact Me</h1>
-                <span className="experienceDesc">Please fill out the form below to discuss any work apportunities.</span>
-                <form className='contactForm'>
-                    <input type="text" className="name"placeholder='Your Name' />
-                    <input type="email" className="name"placeholder='Your Email' />
-                    <textarea className='msg' name="message" rows="S" placeholder='Your Message'></textarea>
+                <h1 className="contactPageTitle">Contact Me</h1>
+                <span className="contactDesc">Please fill out the form below to discuss any work opportunities.</span>
+                <form className='contactForm' ref={form} onSubmit={sendEmail}>
+                    <input type="text" className="name" placeholder='Your Name' name='your_name' required />
+                    <input type="email" className="name" placeholder='Your Email' name='your_email' required />
+                    <textarea className='msg' name="message" rows="S" placeholder='Your Message' required></textarea>
                     <button type='submit' value='Send' className="submitBtn">Submit</button>
                     <div className="links">
                         <img src={WhatsappIcon} alt="Whatsapp" className="link" />
@@ -43,7 +60,7 @@ const Experience = () => {
                 </form>
             </div>
         </section>
-    )
+    );
 }
 
 export default Experience;
