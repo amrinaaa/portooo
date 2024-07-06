@@ -1,4 +1,4 @@
-.footer {
+.copyright {
     position: auto;
     text-align: center;
     bottom: 0;
@@ -6,6 +6,7 @@
     height: 2.5rem;
   }
   
-.footer p {
+.copyright p {
     color: #ccc;
+    font-size: small;
   }

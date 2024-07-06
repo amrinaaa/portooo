@@ -1,13 +1,13 @@
 import React from "react";
-import './footer.css';
+import './copyright.css';
 
-function Footer() {
+function Copyright() {
   const currYear = new Date().getFullYear();
   return (
-    <footer className="footer">
+    <copyright className="copyright">
       <p>Copyright @amrybubb0 {currYear}</p>
-    </footer>
+    </copyright>
   );
 }
 
-export default Footer;
+export default Copyright;

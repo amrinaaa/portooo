@@ -15,6 +15,14 @@
     font-size: 3rem;
 }
 
+#experience {
+    padding: 2 rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 .experienceDesc {
     font-weight: 300;
     font-size: 1rem;
@@ -29,13 +37,58 @@
     width: 100vw;
     max-width: 65rem;
     padding: 0 1rem;
+    margin: 1rem 0;
 }
 
 .experienceImg {
     object-fit: cover;
-    height: 15.5em;
+    height: 16rem;
     width: calc(45%);
     margin: 0.5rem;
+    cursor: pointer;
+}
+
+.contactForm {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    max-width: 60rem;
+}
+
+.name, .email, .msg {
+    font-size: 0.7rem;
+    width: 100%;
+    max-width: 40rem;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    background: rgb(3, 12, 40);
+}
+
+.submitBtn {
+    background: white;
+    border: none;
+    border-radius: 1rem;
+    margin: 2rem;
+    padding: 0.75rem 3.5rem;
+    cursor: pointer;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.link {
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin: 0 0.75rem;
     cursor: pointer;
 }
 
@@ -153,12 +206,16 @@
     }
 
     .experienceDesc {
-        font-size: 0.r6em;
+        font-size: 0.6rem;
     }
 
     .experienceImg {
         height: 10.5rem;
         width: calc(80%);
+    }
+
+    #experience {
+        padding: 2 rem;
     }
 }
 

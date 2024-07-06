@@ -5,8 +5,9 @@ import Volunteer from '../../assets/volunteer.png';
 import Lomba from '../../assets/Lomba.png';
 import Kepanitiaan from '../../assets/kepanitiaan.png';
 import UKM from '../../assets/ukm.png';
-// import InstagramIcon from '../../assets/instagram.png';
-
+import Magang from '../../assets/magang.png';
+import InstagramIcon from '../../assets/instagram.png';
+import TelegramIcon from '../../assets/tele.png';
 
 const Experience = () => {
     return (
@@ -18,10 +19,11 @@ const Experience = () => {
                 </p>
                 <div className="experiencesImg">
                     <img src={Pelatihan} alt=" " className="experienceImg" />
+                    <img src={Magang} alt=" " className="experienceImg" />
                     <img src={Volunteer} alt=" " className="experienceImg" />
                     <img src={Lomba} alt=" " className="experienceImg" />
-                    <img src={Kepanitiaan} alt=" " className="experienceImg" />
                     <img src={UKM} alt=" " className="experienceImg" />
+                    <img src={Kepanitiaan} alt=" " className="experienceImg" />
                 </div>
             </div>
             <div id="experience">
@@ -31,12 +33,10 @@ const Experience = () => {
                     <input type="text" className="name"placeholder='Your Name' />
                     <input type="email" className="name"placeholder='Your Email' />
                     <textarea className='msg' name="message" rows="S" placeholder='Your Message'></textarea>
-                    <button type='submit' value='Send' className="submitbtn">Submit</button>
+                    <button type='submit' value='Send' className="submitBtn">Submit</button>
                     <div className="links">
-                        {/* <img src={} alt="" className="link" />
-                        <img src={} alt="" className="link" />
-                        <img src={} alt="" className="link" />
-                        <img src={} alt="" className="link" /> */}
+                        <img src={InstagramIcon} alt="Instagram" className="link" />
+                        <img src={TelegramIcon} alt="Telegram" className="link" />
                     </div>
                 </form>
             </div>
