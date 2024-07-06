@@ -23,6 +23,15 @@
     text-align: center;
 }
 
+#contact {
+    padding: 2 rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    scroll-margin-top: 100px;
+}
+
 .experienceDesc {
     font-weight: 300;
     font-size: 1rem;

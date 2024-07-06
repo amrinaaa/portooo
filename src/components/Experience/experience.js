@@ -8,6 +8,7 @@ import UKM from '../../assets/ukm.png';
 import Magang from '../../assets/magang.png';
 import InstagramIcon from '../../assets/instagram.png';
 import TelegramIcon from '../../assets/tele.png';
+import WhatsappIcon from '../../assets/whatsapp.png';
 
 const Experience = () => {
     return (
@@ -26,7 +27,7 @@ const Experience = () => {
                     <img src={Kepanitiaan} alt=" " className="experienceImg" />
                 </div>
             </div>
-            <div id="experience">
+            <div id="contact">
                 <h1 className="experiencePageTitle">Contact Me</h1>
                 <span className="experienceDesc">Please fill out the form below to discuss any work apportunities.</span>
                 <form className='contactForm'>
@@ -35,6 +36,7 @@ const Experience = () => {
                     <textarea className='msg' name="message" rows="S" placeholder='Your Message'></textarea>
                     <button type='submit' value='Send' className="submitBtn">Submit</button>
                     <div className="links">
+                        <img src={WhatsappIcon} alt="Whatsapp" className="link" />
                         <img src={InstagramIcon} alt="Instagram" className="link" />
                         <img src={TelegramIcon} alt="Telegram" className="link" />
                     </div>
