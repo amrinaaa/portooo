@@ -6,9 +6,9 @@ import Lomba from '../../assets/Lomba.png';
 import Kepanitiaan from '../../assets/kepanitiaan.png';
 import UKM from '../../assets/ukm.png';
 import Magang from '../../assets/magang.png';
-import InstagramIcon from '../../assets/instagram.png';
-import TelegramIcon from '../../assets/tele.png';
 import WhatsappIcon from '../../assets/whatsapp.png';
+import TelegramIcon from '../../assets/tele.png';
+import InstagramIcon from '../../assets/instagram.png';
 import emailjs from '@emailjs/browser';
 
 const Experience = () => {
@@ -56,8 +56,8 @@ const Experience = () => {
                     <button type='submit' value='Send' className="submitBtn">Submit</button>
                     <div className="links">
                         <img src={WhatsappIcon} alt="Whatsapp" className="link" />
-                        <img src={InstagramIcon} alt="Instagram" className="link" />
                         <img src={TelegramIcon} alt="Telegram" className="link" />
+                        <img src={InstagramIcon} alt="Instagram" className="link" />
                     </div>
                 </form>
             </div>

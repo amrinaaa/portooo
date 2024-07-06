@@ -131,11 +131,15 @@
         font-size: 0.9rem;
     }
 
+    .contactDesc {
+        font-size: 0.9rem;
+    }
+
+    }
     .experienceImg {
         height: 12.5rem;
         width: calc(45%);
     }
-}
 
 @media screen and (max-width: 750px) {
     .experienceImg {
@@ -157,6 +161,10 @@
     }
 
     .experienceDesc {
+        font-size: 0.8rem;
+    }
+
+    .contactDesc {
         font-size: 0.8rem;
     }
 
@@ -196,6 +204,10 @@
         font-size: 0.8rem;
     }
 
+    .contactDesc {
+        font-size: 0.8rem;
+    }
+
     .experienceImg {
         height: 12rem;
         width: calc(80%);
@@ -218,6 +230,10 @@
         font-size: 0.6rem;
     }
 
+    .contactDesc {
+        font-size: 0.6rem;
+    }
+    
     .experienceImg {
         height: 10.5rem;
         width: calc(80%);
