@@ -3,7 +3,7 @@ import Intro from "./components/Intro/intro";
 import Skills from "./components/Skills/skills";
 import Porto from "./components/Porto/porto";
 import Footer from "./components/Footer/footer";
-import Contact from "./components/Contact/contact";
+import Experience from "./components/Experience/experience";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <Skills />
       <Porto />
       <Footer />
-      <Contact />
+      <Experience />
     </div>
   );
 }
