@@ -30,6 +30,8 @@ const Experience = () => {
             });
     };
 
+    const whatsappMessage = "Hello, I'm interested in learning more about your services. Can we discuss further?";
+
     return (
         <section id="experiencePage">
             <div id="experience">
@@ -55,9 +57,13 @@ const Experience = () => {
                     <textarea className='msg' name="message" rows="S" placeholder='Your Message' required></textarea>
                     <button type='submit' value='Send' className="submitBtn">Submit</button>
                     <div className="links">
-                        <img src={WhatsappIcon} alt="Whatsapp" className="link" />
+                    <a href={`https://wa.me/6285752696932?text=${encodeURIComponent(whatsappMessage)}`} target="_blank" rel="noopener noreferrer">
+                            <img src={WhatsappIcon} alt="Whatsapp" className="link" />
+                        </a>
+                    <a href="https://www.instagram.com/amrnarrd_" target="_blank" rel="noopener noreferrer">
+                            <img src={InstagramIcon} alt="Instagram" className="link" />
+                        </a>
                         <img src={TelegramIcon} alt="Telegram" className="link" />
-                        <img src={InstagramIcon} alt="Instagram" className="link" />
                     </div>
                 </form>
             </div>
